@@ -52,12 +52,6 @@
     </div>
     <?php endif; ?>
 
-    <!-- Exemple flash erreur (démo) -->
-    <div class="flash flash-error">
-      <i class="bi bi-exclamation-circle-fill"></i>
-      Identifiants incorrects. Veuillez réessayer.
-    </div>
-
     <form action="<?= base_url('auth/login') ?>" method="post">
       <?= csrf_field() ?>
       <div class="f-group">
