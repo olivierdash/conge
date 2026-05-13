@@ -6,10 +6,6 @@ use App\Models\EmployeModel;
 
 class Auth extends BaseController
 {
-<<<<<<< HEAD
-    public function index()
-    {
-=======
     private function ensureDemoDataSeeded(): void
     {
         if ((defined('ENVIRONMENT') ? ENVIRONMENT : null) !== 'development') {
@@ -37,7 +33,6 @@ class Auth extends BaseController
     public function index()
     {
         $this->ensureDemoDataSeeded();
->>>>>>> 5e94279
         return view('auth/login'); // Le nom de votre fichier HTML fourni
     }
 
@@ -48,11 +43,8 @@ class Auth extends BaseController
         
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
-<<<<<<< HEAD
-=======
 
         $this->ensureDemoDataSeeded();
->>>>>>> 5e94279
         
         $user = $model->where('email', $email)->first();
 
@@ -84,8 +76,4 @@ class Auth extends BaseController
         session()->destroy();
         return redirect()->to('/auth');
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5e94279
