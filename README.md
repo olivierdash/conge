@@ -1,5 +1,11 @@
 # CodeIgniter 4 Framework
 
+## Données de test (démo)
+
+- Seed (SQLite): `php spark db:seed MainSeeder`
+- Comptes: `admin@techmada.mg / admin123`, `rh@techmada.mg / rh123`, `employe@techmada.mg / emp123`
+- En environnement `development`, si la table `employes` est vide, le seed est lancé automatiquement à l’ouverture de la page `/auth`.
+
 ## What is CodeIgniter?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
